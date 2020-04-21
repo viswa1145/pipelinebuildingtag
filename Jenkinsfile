@@ -7,7 +7,7 @@ pipeline {
 
             }
             steps {
-                echo "Building on when prchaging that"
+                echo "Building on when pr"
             }
         }
     }
