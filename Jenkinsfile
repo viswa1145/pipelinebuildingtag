@@ -3,11 +3,11 @@ pipeline {
     stages {
         stage("Build") {
             when {
-               tag "release-*"
+               changeRequest title: 'when-pr'
 
             }
             steps {
-                echo "Building on buildingTag"
+                echo "Building on when prchaging that"
             }
         }
     }
