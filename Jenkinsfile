@@ -3,11 +3,11 @@ pipeline {
     stages {
         stage("Build") {
             when {
-               changeRequest()
+               changeRequest title: 'when-pr'
 
             }
             steps {
-                echo "Building on buildingTag"
+                echo "Building on when pr"
             }
         }
     }
