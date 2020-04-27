@@ -1,10 +1,8 @@
 pipeline {
     agent any
     options { 
-        timestamps() 
-        { 
-            //overrideIndexTriggers(true) 
-        }
+            timestamps() 
+            //overrideIndexTriggers(true)     
     }
     
     stages {
