@@ -1,13 +1,16 @@
 pipeline {
     agent any
+    options { 
+        timestamps() 
+        { 
+            //overrideIndexTriggers(true) 
+        }
+    }
+    
     stages {
         stage("Build") {
-            when {
-               changeRequest title: 'when-pr'
-
-            }
             steps {
-                echo "Building on when pr"
+                echo "Building on Hello World"
             }
         }
     }
