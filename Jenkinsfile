@@ -1,8 +1,7 @@
 pipeline {
     agent any
     options { 
-            timestamps() 
-            overrideIndexTriggers(false)     
+            checkoutToSubdirectory('foo')
     }
     
     stages {
